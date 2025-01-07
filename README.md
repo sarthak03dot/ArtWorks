@@ -1,5 +1,8 @@
 # Artwork Generator
 
+![React App and 2 more pages - Personal - Microsoft_ Edge 2025-01-07 11-33-18](https://github.com/user-attachments/assets/ee668096-f3d0-47e6-81a7-e070cc893d1e)
+
+
 A fun and interactive web-based artwork generator where users can create colorful abstract art pieces using random colors and shapes. The artwork can be saved with a title and viewed in a gallery.
 
 ## Features
@@ -21,4 +24,4 @@ To get started with the project, follow the steps below:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/sarthak03dot/ArtWorks.git
