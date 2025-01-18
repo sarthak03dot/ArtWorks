@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+// const apiUrl = 'http://localhost:9000';
+const apiUrl ="https://artworks-1.onrender.com"
 
 const ArtworkGallery = () => {
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
     const fetchArtworks = async () => {
-      const response = await axios.get("http://localhost:9000/api/artworks");
+      const response = await axios.get(`${apiUrl}/api/artworks`);
       setArtworks(response.data);
     };
     fetchArtworks();
@@ -14,7 +16,7 @@ const ArtworkGallery = () => {
 
   const handleDelete = async(id) => {
     try {
-      await axios.delete(`http://localhost:9000/api/artworks/${id}`);
+      await axios.delete(`${apiUrl}/api/artworks/${id}`);
       setArtworks((prevArtWork) =>
         prevArtWork.filter((artworks) => artworks._id !== id)
       );

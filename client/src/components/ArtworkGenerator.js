@@ -1,5 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import axios from "axios";
+// const apiUrl = 'http://localhost:9000';
+const apiUrl ="https://artworks-1.onrender.com"
 
 const ArtworkGenerator = () => {
   const canvasRef = useRef(null);
@@ -22,7 +24,7 @@ const ArtworkGenerator = () => {
     const dataURL = canvas.toDataURL();
     const title = prompt("Enter a title for your artwork:");
     if (title) {
-      await axios.post("http://localhost:9000/api/artworks", {
+      await axios.post(`${apiUrl}/api/artworks`, {
         title,
         image: dataURL,
       });
