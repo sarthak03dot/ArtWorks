@@ -25,3 +25,4 @@ To get started with the project, follow the steps below:
 
 ```bash
 git clone https://github.com/sarthak03dot/ArtWorks.git
+cd ArtWorks
