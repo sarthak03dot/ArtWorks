@@ -9,7 +9,7 @@ A fun and interactive web-based artwork generator where users can create colorfu
 - Generate abstract art with random shapes and colors.
 - Save generated artwork to a database with a title.
 - View saved artworks in the gallery.
-
+  
 ## Technologies Used
 - **React**: For building the user interface.
 - **Canvas API**: For drawing on the canvas element.
