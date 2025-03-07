@@ -1,2 +1,3 @@
+# that files ignored by git
 node_modules/
 .env
